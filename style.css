@@ -1,0 +1,468 @@
+*{
+  scroll-behavior: smooth;
+}
+
+/* Reset some default styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set Poppins font */
+body, html {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header and Navigation Styles */
+.parallax-window {
+  min-height: 600px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-box {
+  color: #4f4f4f;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.buttons {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 30%;
+}
+
+/* Section Styles */
+#description,
+#origin {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+#origin {
+  background-image: url("images/purple_stars.png");
+  height: 50%;
+}
+
+.origintable {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+/* General Text Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+html {
+  background-color: maroon;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  background-color: #555;
+}
+
+/* Red Box Styles */
+.red-box {
+  background-color: maroon;
+}
+
+/* Button Background Styles */
+.buttonbg {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Fieldset and Legend Styles */
+#fildsit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 30%;
+  background-color: maroon;
+  text-align: center;
+}
+
+legend {
+  width: auto;
+  margin: 0 auto;
+  font-size: 120%;
+}
+
+/* Image Styles */
+#field1, #field2, #field3 {
+  width: 100%;
+}
+
+#field1 img, #field2 img, #field3 img {
+  width: 100%;
+  height: auto;
+}
+
+#field4, #field5 {
+  width: 100%;
+}
+
+#field4 img, #field5 img {
+  width: 100%;
+  height: 250px; /* Adjust the em value as needed */
+  object-fit: cover;
+}
+
+#field6 img {
+  width: 90%;
+  height: 90%;
+}
+
+/* Body Maxxing Styles */
+#bodymaxxing {
+  background-color: rgba(128, 0, 0, 0.8);
+}
+
+/* Grid Container Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px; /* Adjust gap between items as needed */
+}
+
+/* Responsive Fieldset Styles */
+.responsive-fieldset {
+  max-width: 100%;
+  margin: auto;
+}
+
+.responsive-fieldset img,
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+
+.eyeImage:hover {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.popup2 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+
+.video2{
+  width: 600;
+  height: 600;
+}
+.popup3 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.popup4 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay4 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.popup5 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay5 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.popup6 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay6 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.p1{
+  font-size: 12px;
+}
+
+.popup7 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay7 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.popup8 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay8 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.popup9 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  border: 1px solid;
+  border-color: whitesmoke;
+  z-index: 1000;
+  height: 500px;
+  width: 500px;
+}
+
+.overlay9 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(73, 73, 73, 0.5);
+  z-index: 999;
+}
+.mogger{
+  top: 10%;
+  position: absolute;
+  right: 90%;
+  height: 20px;
+  width: 100px;
+}
+
